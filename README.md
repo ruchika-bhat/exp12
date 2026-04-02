@@ -1,5 +1,6 @@
 # AIM: CATEGORICAL DATA ANALYSIS USING PYHTON
 
+
 # THEORY:
 Categorical Data Analysis is a statistical method used to analyze data that can be classified into distinct categories or groups. 
 Unlike numerical data, categorical data represents qualitative attributes such as gender, department, grades, or types of transactions. 
@@ -34,7 +35,7 @@ To better interpret categorical data, frequencies are often converted into propo
 df['Column_Name'].value_counts(normalize=True) * 100
 Percentage distribution is especially useful when comparing datasets of different sizes or analyzing proportional representation.
 
-# Cross Tabulation (Contingency Table):
+# Cross Tabulation:
 Cross tabulation is used to examine the relationship between two categorical variables. It displays the joint frequency distribution in a tabular form.
 pd.crosstab(df['Column1'], df['Column2'])
 
@@ -51,7 +52,7 @@ This provides:
 Row-wise proportional distribution
 Better comparison within each category group
 
-# Grouping and Aggregation:
+# Grouping:
 Grouping is an advanced technique used to organize data into subsets based on one or more categorical variables. 
 It allows detailed analysis within each group.
 df.groupby('Column1')['Column2'].value_counts()
@@ -69,13 +70,6 @@ head() displays the initial rows of the dataset
 shape provides the number of rows and columns
 
 This step ensures that the dataset is correctly loaded and ready for analysis.
-
-# Significance of Categorical Data Analysis:
-Categorical data analysis is widely used in various domains such as:
-Education (student grades and departments)
-Business analytics (customer categories, product types)
-Market research (consumer preferences)
-It helps in converting qualitative data into meaningful insights that support decision-making.
 
 
 # CONCLUSION:
